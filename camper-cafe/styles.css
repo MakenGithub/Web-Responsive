@@ -1,0 +1,96 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /* Imagen de fondo de la página */
+    font-family: sans-serif; /* Fuente general para el texto */
+    padding: 20px; /* Espacio alrededor de los bordes de la página */
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 0; /* Elimina el margen superior para ajustar el título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.established {
+    font-style: italic; /* Estilo cursivo para el texto "Est. 2020" */
+}
+
+h1, h2, p {
+    text-align: center; /* Centra títulos y párrafos */
+}
+
+.menu {
+    width: 80%; /* Limita el ancho para que el diseño sea más fácil de leer */
+    background-color: burlywood; /* Color de fondo para resaltar el área del menú */
+    margin-left: auto;
+    margin-right: auto; /* Centra el menú horizontalmente */
+    padding: 20px;
+    max-width: 500px; /* Ancho máximo para mantenerlo compacto en pantallas grandes */
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra las imágenes */
+    margin-top: -25px; /* Ajusta el espaciado superior de la imagen para que se superponga un poco con el texto */
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown; /* Color marrón para la línea separadora */
+}
+
+.bottom-line {
+    margin-top: 25px; /* Espacio superior para la línea del pie de página */
+}
+
+h1, h2 {
+    font-family: Impact, serif; /* Cambia la fuente de los títulos para resaltar */
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px; /* Tamaño de fuente para los elementos de menú */
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%; /* Alinea a la izquierda el nombre del artículo */
+}
+
+.price {
+    text-align: right;
+    width: 25%; /* Alinea a la derecha el precio */
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 14px; /* Tamaño de fuente más pequeño en el pie de página */
+}
+
+.address {
+    margin-bottom: 5px; /* Espacio entre la dirección y el enlace */
+}
+
+a {
+    color: black; /* Color inicial para enlaces */
+}
+
+a:visited {
+    color: black; /* Mantiene el mismo color después de visitar */
+}
+
+a:hover {
+    color: brown; /* Color marrón al pasar el ratón */
+}
+
+a:active {
+    color: brown; /* Color marrón cuando se hace clic */
+}

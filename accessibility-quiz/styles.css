@@ -1,0 +1,131 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth; /* Comportamiento de desplazamiento suave */
+    }
+}
+  
+body {
+    background: #f5f6f7; /* Color de fondo */
+    color: #1b1b32; /* Color del texto */
+    font-family: Helvetica; /* Fuente del cuerpo */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+  
+header {
+    width: 100%; /* Ancho completo */
+    height: 50px; /* Altura del encabezado */
+    background-color: #1b1b32; /* Color de fondo del encabezado */
+    display: flex; /* Flexbox para distribución */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alinea elementos verticalmente */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Posiciona en la parte superior */
+}
+  
+#logo {
+    width: max(10rem, 18vw); /* Ancho del logo */
+    background-color: #0a0a23; /* Color de fondo del logo */
+    aspect-ratio: 35 / 4; /* Proporción del logo */
+    padding: 0.4rem; /* Relleno alrededor del logo */
+}
+  
+h1 {
+    color: #f1be32; /* Color del título */
+    font-size: min(5vw, 1.2em); /* Tamaño de fuente adaptable */
+    text-align: center; /* Alineación centrada */
+}
+  
+nav {
+    width: 50%; /* Ancho de la navegación */
+    max-width: 300px; /* Ancho máximo de la navegación */
+    height: 50px; /* Altura de la navegación */
+}
+  
+nav > ul {
+    display: flex; /* Flexbox para la lista de navegación */
+    justify-content: space-evenly; /* Espacio entre elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    align-items: center; /* Alinea elementos verticalmente */
+    padding-inline-start: 0; /* Elimina el padding izquierdo */
+    margin-block: 0; /* Elimina el margen vertical */
+    height: 100%; /* Altura completa */
+}
+  
+nav > ul > li {
+    color: #dfdfe2; /* Color de los elementos de la lista */
+    margin: 0 0.2rem; /* Margen horizontal */
+    padding: 0.2rem; /* Relleno alrededor de los elementos de la lista */
+    display: block; /* Muestra como bloque */
+}
+  
+nav > ul > li:hover {
+    background-color: #dfdfe2; /* Color de fondo al pasar el ratón */
+    color: #1b1b32; /* Color de texto al pasar el ratón */
+    transition: 0.5s; /* Transición suave */
+}
+  
+main {
+    margin-top: 70px; /* Margen superior para el contenido principal */
+    padding: 0.5rem; /* Relleno alrededor del contenido principal */
+    display: flex; /* Flexbox para el contenido principal */
+    flex-direction: column; /* Dirección de columna */
+    gap: 1rem; /* Espacio entre elementos */
+    align-items: center; /* Alinea elementos al centro */
+}
+  
+h2 {
+    margin: 0; /* Elimina márgenes del título */
+}
+  
+.info {
+    display: flex; /* Flexbox para la información */
+    flex-direction: column; /* Dirección de columna */
+    gap: 0.5rem; /* Espacio entre elementos */
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo */
+}
+  
+.question-block {
+    border: 1px solid #1b1b32; /* Borde de las preguntas */
+    border-radius: 0.25rem; /* Esquinas redondeadas */
+    padding: 1rem; /* Relleno alrededor de las preguntas */
+    background-color: #f5f6f7; /* Color de fondo de las preguntas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra de las preguntas */
+}
+  
+fieldset {
+    border: none; /* Sin borde */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+}
+  
+legend {
+    font-weight: bold; /* Negrita para el título del grupo */
+}
+  
+button {
+    margin: 0.5rem; /* Margen alrededor del botón */
+    padding: 0.5rem 1rem; /* Relleno del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    border: none; /* Sin borde */
+    border-radius: 0.25rem; /* Esquinas redondeadas del botón */
+    background-color: #1b1b32; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+  
+button:hover {
+    background-color: #f1be32; /* Color de fondo al pasar el ratón */
+    transition: 0.5s; /* Transición suave */
+}
+  
+footer {
+    background-color: #1b1b32; /* Color de fondo del pie de página */
+    color: #dfdfe2; /* Color del texto del pie de página */
+    padding: 1rem; /* Relleno del pie de página */
+    text-align: center; /* Alineación centrada del pie de página */
+}
+  
+footer a {
+    color: inherit; /* Color del enlace heredado del pie de página */
+}

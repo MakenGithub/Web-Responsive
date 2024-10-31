@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box; /* Establece el box-sizing para que el padding y el border se incluyan en el ancho y alto total del elemento */
+}
+
+body {
+    margin: 0; /* Elimina el margen por defecto del body */
+    font-family: sans-serif; /* Establece la fuente del documento */
+    background: #f5f6f7; /* Color de fondo de la página */
+}
+
+.header {
+    text-align: center; /* Centra el texto en el encabezado */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    padding: 32px; /* Espaciado interno del encabezado */
+    background-color: #0a0a23; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    border-bottom: 4px solid #fdb347; /* Línea inferior del encabezado */
+}
+
+.gallery {
+    display: flex; /* Establece un contenedor flexible para las imágenes */
+    flex-direction: row; /* Coloca los elementos en fila */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 16px; /* Espacio entre los elementos */
+    max-width: 1400px; /* Ancho máximo del contenedor de la galería */
+    margin: 0 auto; /* Centra el contenedor de la galería horizontalmente */
+    padding: 20px 10px; /* Espaciado interno del contenedor de la galería */
+}
+
+.gallery img {
+    width: 100%; /* Hace que las imágenes ocupen el 100% del ancho del contenedor */
+    max-width: 350px; /* Establece un ancho máximo para las imágenes */
+    height: 300px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el área */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.gallery::after {
+    content: ""; /* Crea un pseudo-elemento vacío para controlar el flujo del contenedor */
+    width: 350px; /* Ancho del pseudo-elemento para ajustar el layout */
+}

@@ -1,0 +1,55 @@
+/* Estilo del lienzo con color de fondo y ligero desenfoque */
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00; /* Color de fondo rojo oscuro */
+    overflow: hidden;
+    filter: blur(2px); /* Efecto de desenfoque para el lienzo */
+}
+
+/* Marco exterior con borde negro que rodea el lienzo */
+.frame {
+    border: 50px solid black;
+    width: 500px;
+    padding: 50px;
+    margin: 20px auto;
+}
+
+/* Primer bloque de color con color marrón claro, sombra ligera y rotación */
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762; /* Color marrón claro */
+    margin: 20px auto; /* Centrado dentro del lienzo */
+    box-shadow: 0 0 3px 3px #efb762; /* Sombra suave para profundidad */
+    border-radius: 9px; /* Bordes redondeados */
+    transform: rotate(-0.6deg); /* Pequeña rotación para un aspecto pintado a mano */
+}
+
+/* Segundo bloque de color con rojo oscuro, sombra ligera y rotación */
+.two {
+    width: 475px;
+    height: 200px;
+    background-color: #8f0401; /* Color rojo intenso */
+    margin: 0 auto 20px; /* Centrado con espacio debajo */
+    box-shadow: 0 0 3px 3px #8f0401; /* Sombra suave para profundidad */
+    border-radius: 8px 10px; /* Bordes redondeados personalizados */
+    transform: rotate(0.4deg); /* Ligera rotación */
+}
+
+/* Agrega un ligero desenfoque a los primeros dos bloques para textura */
+.one, .two {
+    filter: blur(1px);
+}
+
+/* Tercer bloque de color con rojo más oscuro, desenfoque más fuerte y radio de borde irregular */
+.three {
+    width: 91%; /* Un poco más estrecho que el lienzo */
+    height: 28%;
+    background-color: #b20403; /* Color burdeos */
+    margin: auto; /* Centrado dentro del lienzo */
+    filter: blur(2px); /* Desenfoque más fuerte */
+    box-shadow: 0 0 5px 5px #b20403; /* Sombra más grande para mayor profundidad */
+    border-radius: 30px 25px 60px 12px; /* Bordes redondeados asimétricos */
+    transform: rotate(-0.2deg); /* Ligera rotación */
+}

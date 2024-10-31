@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> <!-- Establece el conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configura la vista en dispositivos móviles -->
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" /> <!-- Descripción del proyecto -->
+    <title>Accessibility Quiz</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css" /> <!-- Enlace a la hoja de estilos -->
+  </head>
+  <body>
+    <header>
+      <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"> <!-- Logo de freeCodeCamp -->
+      <h1>HTML/CSS Quiz</h1> <!-- Título principal del quiz -->
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li> <!-- Enlace a la sección de información del estudiante -->
+          <li><a href="#html-questions">HTML</a></li> <!-- Enlace a la sección de preguntas HTML -->
+          <li><a href="#css-questions">CSS</a></li> <!-- Enlace a la sección de preguntas CSS -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz"> <!-- Formulario para el quiz -->
+        <section role="region" aria-labelledby="student-info"> <!-- Sección de información del estudiante -->
+          <h2 id="student-info">Student Info</h2> <!-- Título de la sección -->
+          <div class="info">
+            <label for="student-name">Name:</label> <!-- Etiqueta para el nombre -->
+            <input type="text" name="student-name" id="student-name" /> <!-- Campo de entrada para el nombre -->
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label> <!-- Etiqueta para el correo electrónico -->
+            <input type="email" name="student-email" id="student-email" /> <!-- Campo de entrada para el correo electrónico -->
+          </div>
+          <div class="info">
+            <label for="birth-date">Date of Birth:</label> <!-- Etiqueta para la fecha de nacimiento -->
+            <input type="date" name="birth-date" id="birth-date" /> <!-- Campo de entrada para la fecha de nacimiento -->
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions"> <!-- Sección de preguntas HTML -->
+          <h2 id="html-questions">HTML</h2> <!-- Título de la sección -->
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>1</h3> <!-- Pregunta 1 -->
+            <fieldset class="question" name="html-question-one"> <!-- Grupo de opciones para la pregunta 1 -->
+              <legend>
+                The legend element represents a caption for the content of its
+                parent fieldset element
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" /> <!-- Opción de respuesta 1 -->
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" /> <!-- Opción de respuesta 2 -->
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3> <!-- Pregunta 2 -->
+            <fieldset class="question" name="html-question-two"> <!-- Grupo de opciones para la pregunta 2 -->
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" /> <!-- Opción de respuesta 1 -->
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" /> <!-- Opción de respuesta 2 -->
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions"> <!-- Sección de preguntas CSS -->
+          <h2 id="css-questions">CSS</h2> <!-- Título de la sección -->
+          <div class="formrow">
+            <div class="question-block">
+              <label for="selector">Can the CSS margin property accept negative values?</label> <!-- Pregunta sobre propiedades CSS -->
+            </div>
+            <div class="answer">
+              <select name="selector" id="selector" required> <!-- Selección de respuesta -->
+                <option value="">Select an option</option> <!-- Opción por defecto -->
+                <option value="yes">Yes</option> <!-- Opción de respuesta "Sí" -->
+                <option value="no">No</option> <!-- Opción de respuesta "No" -->
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-textarea">Do you have any questions:</label> <!-- Pregunta sobre dudas -->
+            </div>
+            <div class="answer">
+              <textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea> <!-- Área de texto para preguntas -->
+            </div>
+          </div>
+        </section>
+        <button type="submit">Send</button> <!-- Botón para enviar el formulario -->
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br /> <!-- Enlace a freeCodeCamp -->
+        San Francisco<br /> <!-- Ubicación -->
+        California<br /> <!-- Estado -->
+        USA <!-- País -->
+      </address>
+    </footer>
+  </body>
+</html>

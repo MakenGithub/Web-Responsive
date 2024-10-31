@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box; /* Incluye padding y border en el cálculo de ancho y alto */
+}
+
+html {
+  font-size: 16px; /* Tamaño base de fuente */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Fuente del cuerpo */
+}
+
+.label {
+  border: 2px solid black; /* Borde de la etiqueta */
+  width: 270px; /* Ancho de la etiqueta */
+  margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+  padding: 0 7px; /* Padding lateral */
+}
+
+header h1 {
+  text-align: center; /* Centra el texto del encabezado */
+  margin: -4px 0; /* Margen negativo superior e inferior */
+  letter-spacing: 0.15px; /* Espaciado entre letras */
+}
+
+p {
+  margin: 0; /* Elimina márgenes de párrafos */
+  display: flex; /* Usar flexbox para la disposición */
+  justify-content: space-between; /* Distribuye el espacio entre elementos */
+}
+
+.divider {
+  border-bottom: 1px solid #888989; /* Línea divisoria */
+  margin: 2px 0; /* Margen superior e inferior */
+}
+
+.bold {
+  font-weight: 800; /* Negrita */
+}
+
+.large {
+  height: 10px; /* Altura de línea divisoria grande */
+}
+
+.large, .medium {
+  background-color: black; /* Color de fondo de las líneas divisorias */
+  border: 0; /* Sin borde */
+}
+
+.medium {
+  height: 5px; /* Altura de línea divisoria media */
+}
+
+.small-text {
+  font-size: 0.85rem; /* Tamaño de fuente reducido */
+}
+
+.calories-info {
+  display: flex; /* Usar flexbox para la información calórica */
+  justify-content: space-between; /* Distribuye el espacio entre elementos */
+  align-items: flex-end; /* Alinea los elementos al final del contenedor */
+}
+
+.calories-info h2 {
+  margin: 0; /* Elimina márgenes del encabezado secundario */
+}
+
+.left-container p {
+  margin: -5px -2px; /* Margen negativo para ajustar espacio */
+  font-size: 2em; /* Tamaño de fuente grande */
+  font-weight: 700; /* Peso de fuente semi-negrita */
+}
+
+.calories-info span {
+  margin: -7px -2px; /* Margen negativo para ajustar espacio */
+  font-size: 2.4em; /* Tamaño de fuente extra grande */
+  font-weight: 700; /* Peso de fuente semi-negrita */
+}
+
+.right {
+  justify-content: flex-end; /* Alinea elementos al final del contenedor */
+}
+
+.indent {
+  margin-left: 1em; /* Sangría izquierda */
+}
+
+.double-indent {
+  margin-left: 2em; /* Doble sangría izquierda */
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989; /* Línea divisoria para párrafos */
+}
+
+.note {
+  font-size: 0.6rem; /* Tamaño de fuente reducido para notas */
+  margin: 5px 0; /* Margen superior e inferior */
+  padding: 0 8px; /* Padding lateral */
+  text-indent: -8px; /* Sangría negativa */
+}
